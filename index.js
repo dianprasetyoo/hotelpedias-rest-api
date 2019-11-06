@@ -67,4 +67,5 @@ app.group("/api/v2", (router) => {
     router.delete('/orders/:id', authenticated, OrderController.deleteCheckin)
 })
 
-app.listen(port, ()=> console.log(`listen on port ${port}!`))
+// app.listen(port, ()=> console.log(`listen on port ${port}!`))
+app.listen(process.env.PORT || 9876, function(){console.log(`listening on our port!`)})
