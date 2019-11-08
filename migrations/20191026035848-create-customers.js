@@ -12,10 +12,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       identity_number: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       phone_number: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       image: {
         type: Sequelize.STRING
