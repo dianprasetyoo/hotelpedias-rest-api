@@ -47,11 +47,11 @@ exports.uploadImage = (req, res) => {
 
 //DELETE Custumer
 exports.deleteCustomer = (req, res) => {
-    const {customer_id} = req.params
+    const {id_customer} = req.params
     customer.destroy({
-        where : {id: customer_id}
+        where : {id: id_customer}
     }).then(result => res.send({
-        id: customer_id,
+        id: id_customer,
         message : "Customer dihapus"
     })
     )
