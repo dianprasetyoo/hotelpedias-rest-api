@@ -46,6 +46,7 @@ exports.login = (req, res) =>{
             })
         }else{
             res.send({
+                error:true,
                 message: "Username yang anda masukkan sudah digunakan"
             })
         }
