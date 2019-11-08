@@ -54,7 +54,9 @@ app.group("/api/v2", (router) => {
      //EDIT CUSTOMER
     router.patch('/customers/:id_customer', authenticated, CustomerController.updateCustomer)
     //Upload Image Customer
-    router.post('/customers/profile', upload.single('customerImage'), CustomerController.uploadImage) 
+    router.post('/customers/profile', upload.single('customerImage'), CustomerController.uploadImage)
+    //Delete Customer
+    router.delete('/customers/:id_customer', authenticated, CustomerController.deleteCustomer) 
 
 
     //Checkin
