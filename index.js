@@ -44,6 +44,8 @@ app.group("/api/v2", (router) => {
     router.post('/rooms', authenticated, RoomController.storeMyRoom)
     //UPDATE MY ROOM
     router.patch('/rooms/:id', authenticated, RoomController.updateMyRoom)
+    //DELETE ROOM
+    router.delete('/rooms/:room_id', authenticated, RoomController.deleteRoom) 
 
 
     //CUSTOMER
